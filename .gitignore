@@ -1,0 +1,88 @@
+# --- Gradle ---
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+.gradletasknamecache
+
+# --- Java / 빌드 산출물 ---
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+!gradle/wrapper/gradle-wrapper.jar
+hs_err_pid*
+replay_pid*
+
+# --- Spring Boot ---
+out/
+*.log
+logs/
+application-local.yml
+application-local.yaml
+application-local.properties
+application-secret*.yml
+application-secret*.properties
+
+# --- H2 데이터베이스 ---
+*.db
+*.mv.db
+*.trace.db
+data/
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# --- Eclipse / STS ---
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+# --- VS Code ---
+.vscode/
+
+# --- NetBeans ---
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Windows / Linux ---
+Thumbs.db
+Desktop.ini
+*~
+
+# --- 환경변수 / 시크릿 ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+
+# --- 기타 임시 파일 ---
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp

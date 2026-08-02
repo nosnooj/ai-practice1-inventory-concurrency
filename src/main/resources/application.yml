@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:inventory;DB_CLOSE_DELAY=-1;MODE=MySQL
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: false
+  h2:
+    console:
+      enabled: true
+
+inventory:
+  # TODO(응시자): 이 값의 근거는? 요구사항 3번의 "일정 시간"과 일치하는가?
+  reservation-ttl-minutes: 10
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
